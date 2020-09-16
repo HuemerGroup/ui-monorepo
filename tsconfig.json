@@ -1,0 +1,13 @@
+{
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "./custom.d.ts"
+  ],
+  "compilerOptions": {
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+}

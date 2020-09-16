@@ -1,0 +1,17 @@
+{
+  "name": "my-org",
+  "version": "0.1.0",
+  "description": "react typescript storybook monorepo",
+  "private": true,
+  "scripts": {
+    "prepare": "lerna run prepare",
+    "start": "lerna run start --parallel",
+    "build": "lerna run build"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
