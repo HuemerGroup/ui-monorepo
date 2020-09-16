@@ -1,4 +1,4 @@
-# UI React TypeScript Storybook Monorepo
+# ui-monorepo
 Template for a "React with TypeScript and Storybook" monorepo. If you want to build multiple React apps with one UI library, this template is worth taking a look.
 
 ## Prerequisites
