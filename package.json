@@ -4,9 +4,12 @@
   "description": "react typescript storybook monorepo",
   "private": true,
   "scripts": {
+    "setup": "yarn install && yarn bootstrap",
+    "bootstrap": "lerna bootstrap",
     "prepare": "lerna run prepare",
     "start": "lerna run start --parallel",
-    "build": "lerna run build"
+    "storybook": "lerna run storybook --stream",
+    "build": "lerna run build --stream"
   },
   "workspaces": [
     "packages/*"

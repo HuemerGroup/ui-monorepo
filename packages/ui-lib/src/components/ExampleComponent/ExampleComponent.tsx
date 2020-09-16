@@ -10,7 +10,7 @@ export const ExampleComponent: React.FunctionComponent<IExampleComponentProps> =
     return (
         <>
             <img src={reactLogo} alt={"react logo"}/>
-            <h2>ExampleComponent with props.text={props.text}</h2>
+            <h1>ExampleComponent imported from {props.text}</h1>
         </>
     );
 }

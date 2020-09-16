@@ -19,7 +19,7 @@ function App() {
         >
           Learn React
         </a>
-        <ExampleComponent text={"test"}/>
+        <ExampleComponent text={"ui-lib"}/>
       </header>
     </div>
   );

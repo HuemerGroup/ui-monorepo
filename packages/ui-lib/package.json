@@ -5,17 +5,17 @@
   "main": "build/index.js",
   "typings": "build/index.d.ts",
   "scripts": {
-    "prepare": "npm run build",
-    "start": "npm run watch",
+    "prepare": "yarn build",
+    "start": "yarn watch",
     "test": "react-scripts test",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
     "build": "run-p build:**",
     "watch": "run-p watch:**",
-    "build:tsc": "tsc",
-    "watch:tsc": "npm run build:tsc -- --watch",
+    "storybook": "start-storybook -p 6006",
+    "watch:storybook": "yarn storybook",
+    "build:tsc": "tsc -b tsconfig.build.json",
+    "watch:tsc": "yarn build:tsc -- --watch",
     "build:assets": "cpx \"src/**/*.{css,scss,svg,png,jpg,woff,woff2}\" build",
-    "watch:assets": "npm run build:assets -- --watch"
+    "watch:assets": "yarn build:assets -- --watch"
   },
   "peerDependencies": {
     "node-sass": "^4.14.1",
