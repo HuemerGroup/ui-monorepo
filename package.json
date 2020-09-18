@@ -7,9 +7,9 @@
     "setup": "yarn install && yarn bootstrap",
     "bootstrap": "lerna bootstrap",
     "prepare": "lerna run prepare",
-    "start": "lerna run start --parallel",
+    "start": "CI=true lerna run start --parallel",
     "storybook": "lerna run storybook --stream",
-    "build": "lerna run build --stream"
+    "build": "CI=true lerna run build --stream"
   },
   "workspaces": [
     "packages/*"
